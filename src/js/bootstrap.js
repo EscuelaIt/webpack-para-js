@@ -20,4 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("date").innerText = fecha;
   });
+
+  document.getElementById("miboton").addEventListener("click", function () {
+    document.getElementById("modal55").open();
+  });
+
+  let el = document.createElement("dile-modal");
+  el.setAttribute("opened", "opened");
+  el.innerHTML = 'hola que tal';
+  document.body.append(el);
+  
 });

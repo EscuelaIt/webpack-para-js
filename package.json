@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "date-fns": "^2.14.0"
+    "@dile/dile-modal": "^1.0.0",
+    "date-fns": "^2.14.0",
+    "lit-element": "^2.3.1"
   }
 }

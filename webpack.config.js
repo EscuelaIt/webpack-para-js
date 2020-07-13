@@ -16,7 +16,8 @@ module.exports = {
   devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
+      // Nota después de clase: Hay que poner ./ en el "filename" para que tome bien la ruta en todos los casos
+      filename: "./index.html",
       template: "src/index.html",
       hash: true,
     }),

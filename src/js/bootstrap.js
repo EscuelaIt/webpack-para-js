@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Ejemplo de validación de email
   document.getElementById("email").addEventListener("input", function () {
     let msg = validateEmail(this.value)
-      ? "El email es válido"
-      : "Eso no es un email";
+      ? "El email es válido SI SI"
+      : "Eso no es un email VÁLIDO !!!!!";
     document.getElementById("msg").innerText = msg;
   });
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let mes = parseInt(document.getElementById("mes").value) - 1;
     let anyo = document.getElementById("anyo").value;
 
-    let fecha = formatDate(anyo, mes, dia);
+    let fecha = formatData(anyo, mes, dia);
 
     document.getElementById("date").innerText = fecha;
   });

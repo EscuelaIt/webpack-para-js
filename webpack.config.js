@@ -8,4 +8,9 @@ module.exports = {
   entry: {
     main: "./src/js/index.js",
   },
+  devServer: {
+    port: 9001,
+    headers: { "Access-Control-Allow-Origin": "*" },
+  },
+  devtool: "inline-source-map",
 };

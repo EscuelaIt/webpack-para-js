@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo con Webpack</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    span {
+      display: inline-block;
+      width: 40px;
+    }
+    p {
+      margin-top: 0;
+    }
+    input.inputdate {
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    Email:
+    <br>
+    <input type="text" id="email" autocomplete="off">
+    <p id="msg"></p>
+  </div>
+
+  <p>
+    <span>Dia:</span> <input class="inputdate" type="text" id="dia" value="1">
+  </p>
+  <p>
+    <span>Mes:</span> <input class="inputdate" type="text" id="mes" value="6">
+  </p>
+  <p>
+    <span>Año:</span> <input class="inputdate" type="text" id="anyo" value="2020">
+  </p>
+  <p>
+    <button class="btn">Convertir</button>
+  </p>
+  <p id="date"></p>
+
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>

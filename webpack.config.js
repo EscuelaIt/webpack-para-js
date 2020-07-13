@@ -21,4 +21,31 @@ module.exports = {
       hash: true,
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        options: {
+          presets: [
+            [
+              "@babel/preset-env",
+              {
+                targets: {
+                  browsers: [
+                    // Best practice: https://github.com/babel/babel/issues/7789
+                    ">=1%",
+                    "not ie 11",
+                    "not op_mini all",
+                  ],
+                },
+                debug: true,
+              },
+            ],
+          ],
+          plugins: ["@babel/plugin-proposal-class-properties"],
+        },
+      },
+    ],
+  },
 };

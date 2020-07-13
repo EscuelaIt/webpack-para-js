@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("email").addEventListener("input", function () {
     let msg = validateEmail(this.value)
       ? "El email es válido SI SI"
-      : "Eso no es un email VÁLIDO !!!!!";
+      : "Eso no es un email válido";
     document.getElementById("msg").innerText = msg;
   });
 

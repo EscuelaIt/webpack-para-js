@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   output: {
@@ -13,4 +14,11 @@ module.exports = {
     headers: { "Access-Control-Allow-Origin": "*" },
   },
   devtool: "inline-source-map",
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: "src/index.html",
+      hash: true,
+    }),
+  ],
 };
